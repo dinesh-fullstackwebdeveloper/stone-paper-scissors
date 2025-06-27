@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor</title>
+    <link rel="shortcut icon" href="assets/human.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header id="header">
+        <h1>Rock Paper Scissor</h1>
+    </header>
+    <main id="main">
+        <div class="display">
+            <div class="image-wrapper human">
+                <img class="player-image human" src="assets/human.png" alt="Human">
+            </div>
+            <div class="life">
+                <p class="life-count">Life : <span>6</span></p>
+                <h1 class="vs">vs</h1>
+            </div>
+            <div class="image-wrapper robot">
+                <img class="player-image robot" src="assets/robot.png" alt="Robot">
+            </div>
+        </div>
+        <div class="result-container">
+            <h4>Human : <span class="human-score">0</span></h4>
+            <h4 class="result">Human Won</h4> 
+            <h4>Computer : <span class="computer-score">0</span></h4>
+        </div>
+        
+        <div class="options-container">
+            <button type="button" class="option-btn option-rock"><img src="assets/rock.png" alt=""></button>
+            <button type="button" class="option-btn option-paper"><img src="assets/paper.png" alt=""></button>
+            <button type="button" class="option-btn option-scissors"><img src="assets/scissor.png" alt=""></button>
+        </div>
+    </main>
+    <div id="result-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2 class="modal-title"></h2>
+        <p class="modal-message"></p>
+      </div>
+    </div>
+    <!-- Custom Cursor Elements -->
+    <div class="custom-cursor-dot"></div>
+    <div class="custom-cursor-ring"></div>
+    <script src="script/script.js"></script>
+</body>
+</html>
